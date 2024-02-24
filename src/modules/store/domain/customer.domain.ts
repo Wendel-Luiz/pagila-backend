@@ -1,9 +1,10 @@
 import { Repository } from '@core/repository'
 import { Address } from './address.domain'
+import { Store } from './store.domain'
 
 export interface Customer {
   customerId: number
-  storeId: number
+  store: Store
   firstName: string
   lastName: string
   email?: string

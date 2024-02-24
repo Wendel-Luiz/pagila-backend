@@ -1,9 +1,10 @@
 import { Repository } from '@core/repository'
+import { Store } from './store.domain'
 
 export interface Inventory {
   inventoryId: number
   filmId: number
-  storeId: number
+  store: Store
   lastUpdate: Date
 }
 

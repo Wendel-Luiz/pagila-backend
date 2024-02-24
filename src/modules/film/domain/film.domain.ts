@@ -1,12 +1,13 @@
 import { Repository } from '@core/repository'
+import { Language } from './language.domain'
 
 export interface Film {
   filmId: number
   title: string
   description?: string
   releaseYear?: number
-  languageId: number
-  originalLanguageId?: number
+  language: Language
+  originalLanguage?: Language
   rentalDuration: number
   rentalRate: number
   length?: number

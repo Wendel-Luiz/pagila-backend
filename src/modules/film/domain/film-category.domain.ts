@@ -1,8 +1,9 @@
 import { Repository } from '@core/repository'
+import { Category } from './category.domain'
 
 export interface FilmCategory {
   filmId: number
-  categoryId: number
+  category: Category
   lastUpdate: Date
 }
 

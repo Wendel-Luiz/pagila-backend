@@ -1,9 +1,11 @@
 import { Repository } from '@core/repository'
+import { Staff } from './staff.domain'
+import { Address } from './address.domain'
 
 export interface Store {
   storeId: number
-  managerStaffId: number
-  addressId: number
+  managerStaff: Staff
+  address: Address
   lastUpdate: Date
 }
 

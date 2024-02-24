@@ -1,12 +1,14 @@
 import { Repository } from '@core/repository'
+import { Address } from './address.domain'
+import { Store } from './store.domain'
 
 export interface Staff {
   staffId: number
   firstName: string
   lastName: string
-  addressId: number
+  address: Address
   email?: string
-  storeId: number
+  store: Store
   active: boolean
   username: string
   password?: string

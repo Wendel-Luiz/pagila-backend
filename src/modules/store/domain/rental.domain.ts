@@ -1,12 +1,15 @@
 import { Repository } from '@core/repository'
+import { Inventory } from './inventory.domain'
+import { Customer } from './customer.domain'
+import { Staff } from './staff.domain'
 
 export interface Rental {
   rentalId: number
   rentalDate: Date
-  inventoryId: number
-  customerId: number
+  inventory: Inventory
+  customer: Customer
   returnDate?: Date | null
-  staffId: number
+  staff: Staff
   lastUpdate: Date
 }
 

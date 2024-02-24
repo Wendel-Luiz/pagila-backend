@@ -1,8 +1,10 @@
 import { Repository } from '@core/repository'
+import { Film } from './film.domain'
+import { Actor } from './actor.domain'
 
 export interface FilmActor {
-  actorId: number
-  filmId: number
+  actor: Actor
+  film: Film
   lastUpdate: Date
 }
 
