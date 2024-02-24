@@ -1,7 +1,7 @@
 import express, { json, urlencoded } from 'express'
 import cors from 'cors'
-import { envApp } from './config/env'
-import { logger } from './config/logger'
+import { envApp } from '@config/env'
+import { logger } from '@config/logger'
 
 export class App {
   private readonly app
